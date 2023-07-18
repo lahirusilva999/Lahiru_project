@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../conn.php';
-$ = "signin";
+$class = "signin";
 
 ?>
 <?php
@@ -59,40 +59,40 @@ alert("Access Denied.");
     }
 }
 ?>
-<div ="signup-page">
-    <div ="form">
+<div class ="signup-page">
+    <div class ="form">
         <h2>Customer Panel</h2>
         <br>
-        <form ="login-form" method="post" role="form" id="signup-form" autocomplete="off">
+        <form class ="login-form" method="post" role="form" id="signup-form" autocomplete="off">
             <!-- json response will be here -->
             <div id="errorDiv"></div>
             <!-- json response will be here -->
 
-            <div ="col-md-12">
-                <div ="form-group">
+            <div class ="col-md-12">
+                <div class ="form-group">
                     <label>Email Address</label>
                     <input type="email" required name="email">
                 </div>
             </div>
 
-            <div ="col-md-12">
-                <div ="form-group">
+            <div class ="col-md-12">
+                <div class ="form-group">
                     <label>Password</label>
                     <input type="password" name="password" id="password">
-                    <span ="help-block" id="error"></span>
+                    <span class ="help-block" id="error"></span>
                 </div>
             </div>
 
 
 
-            <div ="col-md-12">
-                <div ="form-group">
+            <div class ="col-md-12">
+                <div class ="form-group">
                     <button type="submit" id="btn-signup">
                         SIGN IN
                     </button>
                 </div>
             </div>
-            <p ="message">
+            <p class ="message">
                 <a href="#">.</a><br>
             </p>
         </form>
